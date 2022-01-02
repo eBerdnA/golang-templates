@@ -2,11 +2,11 @@ package main
 
 import (
 	"bytes"
-	"html/template"
 	"io/ioutil"
 	"log"
 	"path"
 	"strings"
+	"text/template"
 )
 
 func main() {
