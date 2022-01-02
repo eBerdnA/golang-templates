@@ -1,0 +1,20 @@
+{{ define "base" }}
+  <!doctype html>
+  <html lang="en">
+    <meta charset="utf-8">
+    <meta name=viewport content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="{{ asset "css/styles.css" }}">
+    {{ block "title" . }}
+      <title>GoCrm</title>
+    {{ end }}
+    {{ block "nav" . }}
+      <div>
+        <ul>
+          <li><a href="/person">Person index</a></li>      
+          <li><a href="/person/birthdays">Person Birthday</a></li>
+        </ul>
+      </div>
+    {{ end }}
+    {{ block "main" . }}{{ end }}
+  </html>
+{{ end }}
